@@ -27,7 +27,7 @@ a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 0 1rem;
-  font-size: 13px;
+  font-size: 15px;
 }
 .logo h1 {
   color: rgb(255, 255, 255);
@@ -74,11 +74,12 @@ a {
 .hero-text h2 {
   font-size: 50px;
   max-width: 350px;
+  margin-top: 3rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
 .hero-text p {
-  font: 20px;
+  font-size: 15px;
 }
 
 .common-btn {
@@ -280,14 +281,26 @@ footer {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 }
+
+/*phone*/
+@media (min-width: 480px) {
+  .hero-text h2 {
+    font-size: 55px;
+    margin: 2rem 0;
+  }
+  .hero-text p {
+    font-size: 18px;
+  }
+}
 /*Tablet*/
 @media (min-width: 730px) {
   .hero-text h2 {
     font-size: 65px;
   }
   .hero-text p {
-    font-size: 20px;
+    font-size: 18px;
   }
+
   .service-col {
     display: flex;
   }
@@ -324,6 +337,16 @@ footer {
 /*Laptop*/
 
 @media (min-width: 1279px) {
+  .hero-text h2 {
+    font-size: 70px;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+  .common-btn {
+    padding: 0.8rem;
+    font-size: 18px;
+  }
   .we-heading {
     padding: 1.5rem 0 2.5rem;
   }

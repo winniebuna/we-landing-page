@@ -54,8 +54,8 @@ a {
 
 /*Hero Section*/
 #home {
-  background-image: url("./images/christina-wocintechchat-com-faEfWCdOKIg-unsplash.jpg");
-  height: 80vh;
+  background: url("./images/christina-wocintechchat-com-faEfWCdOKIg-unsplash.jpg");
+  height: 100vh;
   display: flex;
   align-items: center;
   color: white;

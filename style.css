@@ -151,6 +151,38 @@ a {
   font-size: 12px;
 }
 
+/*Team*/
+#team {
+  height: auto;
+  padding: 2rem 0;
+}
+.team1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  margin: 10px;
+  height: auto;
+  width: auto;
+}
+.box img {
+  width: 250px;
+  max-width: 250px;
+  height: 150px;
+  align-content: center;
+}
+
+.box p {
+  padding: 1rem;
+  text-align: center;
+  font-size: 12px;
+  max-width: 250px;
+}
+
+/*Events*/
+
 #events {
   display: flex;
   flex-direction: column;
@@ -221,6 +253,9 @@ footer {
 /*Responsive Design*/
 
 @media screen and (max-width: 768px) {
+  .team {
+    max-width: 768px;
+  }
   body {
     overflow-x: hidden;
   }

@@ -358,45 +358,6 @@ footer {
 
 /*Tablet*/
 @media (min-width: 730px) {
-<<<<<<< HEAD
-  .hero-text h2 {
-    font-size: 65px;
-  }
-  .hero-text p {
-    font-size: 18px;
-  }
-  .service-col {
-    display: flex;
-  }
-  .service-col p {
-    font-size: 15px;
-    text-align: left;
-    max-width: 300px;
-  }
-  .join-us p {
-    font-size: 15px;
-  }
-  .latest-events {
-    display: flex;
-  }
-  .latest-events p {
-    font-size: 15px;
-    max-width: 300px;
-    margin-left: 2rem;
-  }
-  #events button {
-    margin-top: 3rem;
-  }
-  form {
-    align-items: center;
-  }
-  form input {
-    width: 50%;
-  }
-  form button {
-    width: 50%;
-  }
-=======
     .hero-text h2 {
         font-size: 65px;
     }
@@ -434,65 +395,10 @@ footer {
     form button {
         width: 50%;
     }
->>>>>>> 48146b50dd0a11e659898e1f349d9ab250e603fa
 }
 
 /*Laptop*/
 @media (min-width: 1279px) {
-<<<<<<< HEAD
-  .hero-text h2 {
-    font-size: 70px;
-  }
-  .hero-text p {
-    font-size: 20px;
-  }
-  .common-btn {
-    padding: 0.8rem;
-    font-size: 18px;
-  }
-  .we-heading {
-    padding: 1.5rem 0 2.5rem;
-  }
-  .service-row {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .service-col {
-    display: flex;
-    flex-direction: column;
-  }
-  .service-col p {
-    font-size: 15px;
-    text-align: center;
-    max-width: 250px;
-  }
-  .join-us p {
-    font-size: 15px;
-    max-width: 400px;
-  }
-  .latest-events img {
-    width: 350px;
-    height: 250px;
-  }
-  .latest-events p {
-    font-size: 15px;
-    max-width: 300px;
-    margin-left: 5rem;
-    align-self: center;
-  }
-  #events button {
-    margin-top: 3rem;
-  }
-  form {
-    align-items: center;
-  }
-  form input {
-    width: 50%;
-  }
-  form button {
-    width: 50%;
-  }
-=======
     .hero-text h2 {
         font-size: 70px;
     }
@@ -545,5 +451,4 @@ footer {
     form button {
         width: 50%;
     }
->>>>>>> 48146b50dd0a11e659898e1f349d9ab250e603fa
 }

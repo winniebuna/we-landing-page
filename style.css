@@ -96,7 +96,9 @@ a {
 .common-btn {
     background-color: rgb(250, 69, 175);
     border: none;
-    color: rgb(235, 231, 231);
+    border-radius: 5px;
+    /* color: rgb(235, 231, 231); */
+    color:rgb(255, 255, 255);
     margin-top: 1rem;
     font-size: 15px;
     padding: 0.5rem;
@@ -148,7 +150,8 @@ a {
 
 /*join section*/
 #join {
-    background-color: rgb(226, 151, 176);
+    /* background-color: rgb(226, 151, 176); */
+    background-color: #FFC0CB;
     padding: 2rem 3rem;
 }
 

@@ -27,14 +27,14 @@ li {
     list-style: none;
 }
 
-a {
+li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 0 1rem;
     font-size: 15px;
 }
 
-a:hover {
+li a:hover {
     color: rgb(250, 69, 175);
     font-weight: bold;
     font-size: 17px;
@@ -188,7 +188,7 @@ a:hover {
 /* Services Section */
 .service {
     height: auto;
-    padding: 5rem 0rem 2rem 0rem;
+    padding: 3rem 0rem 3rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,7 +198,7 @@ a:hover {
 .service h2 {
     text-align: center;
     color: rgb(92, 55, 61);
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
     line-height: 1rem;
 }
 
@@ -216,7 +216,7 @@ a:hover {
 
 .latest-event p {
     padding: 1rem;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     max-width: 300px;
     line-height: 3rem;
@@ -226,7 +226,7 @@ a:hover {
 /*Team Section*/
 .team {
     background-color: #FFC0CB;
-    padding: 3rem 0rem 2rem 0rem;
+    padding: 3rem 0rem 1rem 0rem;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,7 +236,7 @@ a:hover {
 .team h2 {
     text-align: center;
     color: rgb(92, 55, 61);
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
     line-height: 1rem;
 }
 
@@ -248,7 +248,7 @@ a:hover {
 }
 
 .team-col {
-    margin: 5px;
+    margin: 3px;
     height: auto;
     width: auto;
 }
@@ -256,8 +256,8 @@ a:hover {
 .team-col img {
     width: 250px;
     max-width: 250px;
-    height: 150px;
-    max-height: 150px;
+    height: 200px;
+    max-height: 200px;
     align-content: center;
 }
 
@@ -282,45 +282,66 @@ a:hover {
 .contact h2 {
     text-align: center;
     color: rgb(92, 55, 61);
-    padding-bottom: 1.5rem;
-    line-height: 1rem;
+    padding-bottom: 2rem;
+    line-height: 2rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-bottom: 2rem;
 }
 
 form input {
-    padding: 0.3rem;
-    margin-bottom: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
     border: 1px solid rgb(250, 69, 175);
-    height: 2rem;
+    height: 3rem;
+}
+
+form button {
+    background-color: rgb(250, 69, 175);
+    border: none;
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    margin-top: 1rem;
+    font-size: 18px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    border: solid 1px rgb(250, 69, 175);
+    background-color: rgb(255, 255, 255);
+    color: rgb(250, 69, 175);
 }
 
 
 /* Footer Section */
 footer {
-    background-color: rgb(226, 151, 176);
-    padding-bottom: 3rem;
+    background-color: #FF69B4;
+    padding-bottom: 2rem;
 }
 
 .footer-text {
     text-align: center;
-    padding: 3rem 0 1rem;
+    padding: 2rem 0 1rem 0;
 }
 
 .footer-text h3 {
     padding-bottom: 0;
+    color: rgb(92, 55, 61);
 }
 
 .pstyle {
-    font-size: 12px;
+    font-size: 15px;
+    color: rgb(92, 55, 61);
+    margin-bottom: 0.5rem;
 }
 
 .footer-icons {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -331,8 +352,8 @@ footer {
 }
 
 .social-icons img {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     margin-right: 1rem;
 }
 

@@ -205,7 +205,7 @@ li a:hover {
 .latest-event {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -220,7 +220,8 @@ li a:hover {
     text-align: center;
     max-width: 300px;
     max-height: 300px;
-    line-height: 2rem;
+    line-height: 1.5rem;
+    margin-left: 2rem;
 }
 
 
@@ -424,7 +425,7 @@ footer {
 /*Phone*/
 @media (min-width: 200px) {
     .hero-text h2 {
-        font-size: 55px;
+        font-size: 40px;
         margin: 2rem 0;
     }
     .hero-text p {
@@ -446,14 +447,26 @@ footer {
         justify-content:center;
         align-items: center;
     }
-    .latest-events {
+    .latest-event {
         display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
     }
-    .latest-events p {
+
+    .latest-event img {
+        height: 300px;
+        width: 300px;
+    }
+    .latest-event p {
+        margin: 1rem;
         font-size: 15px;
+        text-align: center;
         max-width: 300px;
+        max-height: 300px;
         margin-left: 2rem;
     }
+    
     form {
         align-items: center;
     }

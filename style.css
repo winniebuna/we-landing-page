@@ -336,13 +336,13 @@ footer {
 .pstyle {
     font-size: 15px;
     color: rgb(92, 55, 61);
-    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .footer-icons {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -354,6 +354,14 @@ footer {
     width: 20px;
     height: 20px;
     margin-right: 1rem;
+}
+
+.copyright {
+    font-size: 12px;
+    color: rgb(92, 55, 61);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 
@@ -418,12 +426,81 @@ footer {
     }
 }
 
-/*Phone*/
+/*Smaller Phone*/
 @media (min-width: 200px) {
     .hero-text {
         position: absolute;
         top: 40%;
-        padding: 0 0 0 3rem;
+        padding: 0 0 0 2rem;
+        color: white;
+    }
+    .hero-text h2 {
+        font-size: 35px;
+        line-height: 3rem;
+    }
+    .hero-text p {
+        font-size: 18px;
+        line-height: 2rem;
+    }
+    .about-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .team {
+        background-color: #FFC0CB;
+        padding: 3rem 0rem 1rem 0rem;
+    }
+    .team-row {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .latest-event {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .latest-event img {
+        height: 200px;
+        width: 200px;
+    }  
+    .latest-event p {
+        font-size: 15px;
+        text-align: center;
+        max-width: 200px;
+        max-height: 200px;
+        line-height: 1.3rem;
+        margin-left: 2rem;
+    }
+    form {
+        align-items: center;
+    }
+    form input {
+        width: 70%;
+    }
+    form textarea {
+        width: 70%;
+    }
+    form button {
+        width: 70%;
+    } 
+    .pstyle {
+        font-size: 13px;
+        color: rgb(92, 55, 61);
+        margin-top: 0.5rem;
+    }
+}
+
+/*Phone*/
+@media (min-width: 480px) {
+    .hero-text {
+        position: absolute;
+        top: 40%;
+        padding: 0 0 0 2rem;
         color: white;
     }
     .hero-text h2 {

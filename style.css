@@ -358,7 +358,7 @@ footer {
 
 
 /*Responsive Design*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     /* .team {
         max-width: 768px;
     } */
@@ -422,7 +422,7 @@ footer {
 }
 
 /*Phone*/
-@media (min-width: 480px) {
+@media (min-width: 200px) {
     .hero-text h2 {
         font-size: 55px;
         margin: 2rem 0;

@@ -163,11 +163,11 @@
         <div id="contact">
             <div class="contact">
                 <h2>Contact WE</h2>
-                <form action="https://getform.io/f/d48257c3-b233-4725-9bc0-a4f1a105305d" method="POST">
-                    <input name="name" type="text" placeholder="Name">
-                    <input name="email" type="text" placeholder="Email">
-                    <textarea name="message" placeholder="Enter Message" rows="3"></textarea>
-                    <button type="submit">Send Message</button>
+                <form action="contactform.php" method="post">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Enter Message" rows="4" required></textarea>
+                    <button type="submit" name="submit">Send Message</button>
                 </form>
             </div>
         </div>

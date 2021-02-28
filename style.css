@@ -139,7 +139,6 @@ li a:hover {
 }
 
 .about-col {
-    margin: 5px;
     height: auto;
     width: auto;
 }
@@ -164,7 +163,7 @@ li a:hover {
 /*Join Section*/
 .join-us {
     background-color: #FFC0CB;
-    padding: 3rem 0rem 2rem 0rem;
+    padding: 3rem 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,6 +181,7 @@ li a:hover {
     text-align: center;
     padding: 0.5rem 0rem;
     font-size: 15px;
+    line-height: 2rem;
 }
 
 
@@ -205,8 +205,8 @@ li a:hover {
 .latest-event {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .latest-event img {
@@ -215,11 +215,12 @@ li a:hover {
 }
 
 .latest-event p {
-    padding: 1rem;
+    margin: 1rem;
     font-size: 15px;
     text-align: center;
     max-width: 300px;
-    line-height: 3rem;
+    max-height: 300px;
+    line-height: 2rem;
 }
 
 
@@ -227,10 +228,6 @@ li a:hover {
 .team {
     background-color: #FFC0CB;
     padding: 3rem 0rem 1rem 0rem;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 .team h2 {
@@ -248,7 +245,6 @@ li a:hover {
 }
 
 .team-col {
-    margin: 3px;
     height: auto;
     width: auto;
 }
@@ -273,10 +269,6 @@ li a:hover {
 /* Contact Section */
 .contact {
     padding: 3rem 0rem 2rem 0rem;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 .contact h2 {
@@ -298,6 +290,13 @@ form input {
     margin-bottom: 1rem;
     border: 1px solid rgb(250, 69, 175);
     height: 3rem;
+}
+
+form textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgb(250, 69, 175);
+    font-family: sans-serif;
 }
 
 form button {
@@ -360,14 +359,14 @@ footer {
 
 /*Responsive Design*/
 @media screen and (max-width: 768px) {
-    .team {
+    /* .team {
         max-width: 768px;
-    }
+    } */
     body {
         overflow-x: hidden;
     }
     .hero-text h2 {
-        font-size: 35px;
+        font-size: 30px;
     }
     .hero-text {
         padding-right: 0;
@@ -431,26 +430,21 @@ footer {
     .hero-text p {
         font-size: 18px;
     }
-}
-
-/*Tablet*/
-@media (min-width: 730px) {
-    .hero-text h2 {
-        font-size: 65px;
-    }
-    .hero-text p {
-        font-size: 18px;
-    }
-    .service-col {
+    .about-row {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .service-col p {
-        font-size: 15px;
-        text-align: left;
-        max-width: 300px;
+    .team {
+        background-color: #FFC0CB;
+        padding: 3rem 0rem 1rem 0rem;
     }
-    .join-us p {
-        font-size: 15px;
+    .team-row {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
     }
     .latest-events {
         display: flex;
@@ -460,8 +454,47 @@ footer {
         max-width: 300px;
         margin-left: 2rem;
     }
-    #events button {
-        margin-top: 3rem;
+    form {
+        align-items: center;
+    }
+    form input {
+        width: 50%;
+    }
+    form textarea {
+        width: 50%;
+    }
+    form button {
+        width: 50%;
+    } 
+}
+
+/*Tablet*/
+@media (min-width: 767px) {
+    .hero-text h2 {
+        font-size: 65px;
+    }
+    .hero-text p {
+        font-size: 18px;
+    }
+    .about-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .team-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .latest-events {
+        display: flex;
+    }
+    .latest-events p {
+        font-size: 15px;
+        max-width: 300px;
+        margin-left: 2rem;
     }
     form {
         align-items: center;
@@ -469,13 +502,16 @@ footer {
     form input {
         width: 50%;
     }
-    form button {
+    form textarea {
         width: 50%;
     }
+    form button {
+        width: 50%;
+    } 
 }
 
 /*Laptop*/
-@media (min-width: 1279px) {
+@media (min-width: 1050px) {
     .hero-text h2 {
         font-size: 70px;
     }
@@ -486,22 +522,17 @@ footer {
         padding: 0.8rem;
         font-size: 18px;
     }
-    .we-heading {
-        padding: 1.5rem 0 2.5rem;
-    }
-    .service-row {
+    .about-row {
+        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
-    .service-col {
+    .team-row {
         display: flex;
-        flex-direction: column;
-    }
-    .service-col p {
-        font-size: 15px;
-        text-align: center;
-        max-width: 250px;
-    }
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: flex-start;
+    } 
     .join-us p {
         font-size: 15px;
         max-width: 400px;
@@ -516,13 +547,13 @@ footer {
         margin-left: 5rem;
         align-self: center;
     }
-    #events button {
-        margin-top: 3rem;
-    }
     form {
         align-items: center;
     }
     form input {
+        width: 50%;
+    }
+    form textarea {
         width: 50%;
     }
     form button {

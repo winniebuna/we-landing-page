@@ -77,9 +77,9 @@ li a:hover {
 
 .hero-text h2 {
     font-size: 50px;
-    max-width: 350px;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    /* max-width: 350px; */
+    /* margin-top: 3rem;
+    margin-bottom: 1rem; */
     line-height: 6rem;
 }
 
@@ -205,8 +205,8 @@ li a:hover {
 .latest-event {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .latest-event img {
@@ -215,12 +215,11 @@ li a:hover {
 }
 
 .latest-event p {
-    margin: 1rem;
     font-size: 15px;
     text-align: center;
     max-width: 300px;
     max-height: 300px;
-    line-height: 1.5rem;
+    line-height: 2rem;
     margin-left: 2rem;
 }
 
@@ -360,9 +359,6 @@ footer {
 
 /*Responsive Design*/
 @media screen and (max-width: 767px) {
-    /* .team {
-        max-width: 768px;
-    } */
     body {
         overflow-x: hidden;
     }
@@ -427,29 +423,16 @@ footer {
     .hero-text {
         position: absolute;
         top: 40%;
-        /* padding: 0 0 0 3rem; */
+        padding: 0 0 0 3rem;
         color: white;
     }
-    
     .hero-text h2 {
-        font-size: 35px;
-        max-width: 200px;
-        margin-top: 3rem;
-        margin-bottom: 1rem;
-        line-height: 6rem;
-    }
-    .hero-text p {
-        font-size: 12px;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        line-height: 1rem;
-    }
-    .hero-text h2 {
-        font-size: 35px;
-        /* margin: 2rem 0; */
+        font-size: 50px;
+        line-height: 4rem;
     }
     .hero-text p {
         font-size: 18px;
+        line-height: 2rem;
     }
     .about-row {
         display: flex;
@@ -470,23 +453,21 @@ footer {
     .latest-event {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
         align-items: center;
+        justify-content: space-evenly;
     }
-
     .latest-event img {
-        height: 300px;
-        width: 300px;
-    }
+        height: 250px;
+        width: 250px;
+    }  
     .latest-event p {
-        margin: 1rem;
         font-size: 15px;
         text-align: center;
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 250px;
+        max-height: 250px;
+        line-height: 1.5rem;
         margin-left: 2rem;
     }
-    
     form {
         align-items: center;
     }
@@ -503,30 +484,47 @@ footer {
 
 /*Tablet*/
 @media (min-width: 767px) {
+    .hero-text {
+        position: absolute;
+        top: 35%;
+        padding: 0 0 0 3rem;
+        color: white;
+    }
     .hero-text h2 {
         font-size: 65px;
+        line-height: 5rem;
     }
     .hero-text p {
         font-size: 18px;
+        line-height: 2rem;
     }
     .about-row {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
-
     .team-row {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .latest-events {
+    .latest-event {
         display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
     }
-    .latest-events p {
+    .latest-event img {
+        height: 300px;
+        width: 300px;
+    }
+    .latest-event p {
         font-size: 15px;
+        text-align: center;
         max-width: 300px;
+        max-height: 300px;
+        line-height: 2rem;
         margin-left: 2rem;
     }
     form {
@@ -545,11 +543,19 @@ footer {
 
 /*Laptop*/
 @media (min-width: 1050px) {
+    .hero-text {
+        position: absolute;
+        top: 30%;
+        padding: 0 0 0 3rem;
+        color: white;
+    }
     .hero-text h2 {
         font-size: 70px;
+        line-height: 6rem;
     }
     .hero-text p {
         font-size: 20px;
+        line-height: 2rem;
     }
     .common-btn {
         padding: 0.8rem;
@@ -570,15 +576,23 @@ footer {
         font-size: 15px;
         max-width: 400px;
     }
-    .latest-events img {
-        width: 350px;
-        height: 250px;
+    .latest-event {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
     }
-    .latest-events p {
+    .latest-event img {
+        height: 300px;
+        width: 300px;
+    }
+    .latest-event p {
         font-size: 15px;
+        text-align: center;
         max-width: 300px;
-        margin-left: 5rem;
-        align-self: center;
+        max-height: 300px;
+        line-height: 2rem;
+        margin-left: 2rem;
     }
     form {
         align-items: center;

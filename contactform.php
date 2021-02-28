@@ -5,7 +5,7 @@
         $message = $_POST['message'];
 
         $subject = "WomENpreneurs Contact Form";
-        $mailTo = "oritsegbubemi.makpokpomi@stu.cu.edu.ng";
+        $mailTo = "hello@womenpreneursng.com";
         $headers = "From: ".$mailFrom;
         $txt = "You have received and email from ".$name.".\n\n".$message;
 

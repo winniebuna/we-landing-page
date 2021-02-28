@@ -1,15 +1,16 @@
 <?php
-    if(isset($_POST['submit'])) {
-        $name = $_POST['name'];
-        $mailFrom = $_POST['email'];
-        $message = $_POST['message'];
 
-        $subject = "WomENpreneurs Contact Form";
-        $mailTo = "oritsegbubemi.makpokpomi@stu.cu.edu.ng";
-        $headers = "From: ".$mailFrom;
-        $txt = "You have received and email from ".$name.".\n\n".$message;
 
-        mail($mailTo, $subject, $txt, $headers);
-        header("Location: index.html?mailsent");
-    }
+if($_POST["message"]) {
+
+
+mail("oritsegbubemi.makpokpomi@stu.cu.edu.ng", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
 ?>

@@ -424,9 +424,29 @@ footer {
 
 /*Phone*/
 @media (min-width: 200px) {
+    .hero-text {
+        position: absolute;
+        top: 40%;
+        /* padding: 0 0 0 3rem; */
+        color: white;
+    }
+    
     .hero-text h2 {
-        font-size: 40px;
-        margin: 2rem 0;
+        font-size: 35px;
+        max-width: 200px;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        line-height: 6rem;
+    }
+    .hero-text p {
+        font-size: 12px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1rem;
+    }
+    .hero-text h2 {
+        font-size: 35px;
+        /* margin: 2rem 0; */
     }
     .hero-text p {
         font-size: 18px;
@@ -471,13 +491,13 @@ footer {
         align-items: center;
     }
     form input {
-        width: 50%;
+        width: 70%;
     }
     form textarea {
-        width: 50%;
+        width: 70%;
     }
     form button {
-        width: 50%;
+        width: 70%;
     } 
 }
 
@@ -513,13 +533,13 @@ footer {
         align-items: center;
     }
     form input {
-        width: 50%;
+        width: 70%;
     }
     form textarea {
-        width: 50%;
+        width: 70%;
     }
     form button {
-        width: 50%;
+        width: 70%;
     } 
 }
 

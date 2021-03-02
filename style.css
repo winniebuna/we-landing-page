@@ -56,7 +56,7 @@ li a:hover {
 
 /*Hero Section*/
 .background-image {
-    background: url("./images/christina-wocintechchat-com-faEfWCdOKIg-unsplash.jpg");
+    background: url("./images/background.jpg");
     height: 100vh;
     display: flex;
     align-items: center;
@@ -93,6 +93,7 @@ li a:hover {
 .common-btn {
     background-color: rgb(250, 69, 175);
     border: none;
+    outline: none;
     border-radius: 5px;
     color:rgb(255, 255, 255);
     margin-top: 1rem;
@@ -103,8 +104,13 @@ li a:hover {
 
 .common-btn:hover {
     border: none;
+    outline: none;
     background-color: rgb(255, 255, 255);
     color: rgb(250, 69, 175);
+}
+
+.common-btn:active {
+    outline: none;
 }
 
 
@@ -242,6 +248,8 @@ li a:hover {
     flex-direction: row;
     justify-content:space-evenly;
     align-items: flex-start;
+    margin: 0px;
+    padding: 0px;
 }
 
 .team-col {
@@ -302,6 +310,7 @@ form textarea {
 form button {
     background-color: rgb(250, 69, 175);
     border: none;
+    outline: none;
     border-radius: 5px;
     color:rgb(255, 255, 255);
     margin-top: 1rem;
@@ -314,6 +323,11 @@ form button:hover {
     border: solid 1px rgb(250, 69, 175);
     background-color: rgb(255, 255, 255);
     color: rgb(250, 69, 175);
+    outline: none;
+}
+
+form button:active {
+    outline: none;
 }
 
 
@@ -331,23 +345,25 @@ footer {
 .footer-text h3 {
     padding-bottom: 0;
     color: rgb(92, 55, 61);
+    text-align: center;
 }
 
 .pstyle {
-    font-size: 15px;
+    font-size: 13px;
     color: rgb(92, 55, 61);
-    margin-top: 0.5rem;
 }
 
 .footer-icons {
     margin-top: 0.5rem;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
 .social-icons {
     display: flex;
+    margin-right: 1rem
 }
 
 .social-icons img {
@@ -356,11 +372,18 @@ footer {
     margin-right: 1rem;
 }
 
-.copyright {
-    font-size: 12px;
+.email {
     color: rgb(92, 55, 61);
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    font-size: 17px;
+    margin-bottom: 0.2rem;
+}
+
+.copyright {
+    font-size: 13px;
+    color: rgb(92, 55, 61);
+    margin-top: 1rem;
+    /* margin-bottom: 0.5rem; */
     text-align: center;
 }
 
@@ -488,10 +511,11 @@ footer {
     form button {
         width: 70%;
     } 
-    .pstyle {
-        font-size: 13px;
+    .email {
         color: rgb(92, 55, 61);
-        margin-top: 0.5rem;
+        margin-left: 1rem;
+        font-size: 15px;
+        margin-bottom: 0.2rem;
     }
 }
 
@@ -557,6 +581,12 @@ footer {
     form button {
         width: 70%;
     } 
+    .email {
+        color: rgb(92, 55, 61);
+        margin-left: 1rem;
+        font-size: 15px;
+        margin-bottom: 0.2rem;
+    }
 }
 
 /*Tablet*/
@@ -616,6 +646,12 @@ footer {
     form button {
         width: 70%;
     } 
+    .email {
+        color: rgb(92, 55, 61);
+        margin-left: 1rem;
+        font-size: 17px;
+        margin-bottom: 0.2rem;
+    }
 }
 
 /*Laptop*/
@@ -682,5 +718,11 @@ footer {
     }
     form button {
         width: 50%;
+    }
+    .email {
+        color: rgb(92, 55, 61);
+        margin-left: 1rem;
+        font-size: 17px;
+        margin-bottom: 0.2rem;
     }
 }
